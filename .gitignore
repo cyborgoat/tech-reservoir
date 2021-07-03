@@ -1,5 +1,5 @@
-.pdf
-.xlsx
-.docx
-.zip
-.tar
+*.pdf
+*.xlsx
+*.docx
+*.zip
+*.tar
