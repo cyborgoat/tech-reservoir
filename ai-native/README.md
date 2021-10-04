@@ -16,9 +16,14 @@
 
 ### Input
 
-- Raw Message
+- Raw Log Message
 - Task Type
+  - Status Report
+  - Calculation Result
+  - 
 - Key Values
+  - Sentence Abstraction
+  - Key values
 
 ### Variables - Task Classification
 
