@@ -7,12 +7,14 @@ for (var i = 0; i < buttonList.length; i++) {
         this.style.color = "white";
         var buttonInnerHtml = this.innerHTML;
         makeSound(buttonInnerHtml);
+        buttonAnimation(buttonInnerHtml);
     })
 }
 
 // Detecting Keyboard Press
 document.addEventListener('keydown', function (event) {
     makeSound(event.key);
+    buttonAnimation(event.key);
 })
 
 function makeSound(key) {
@@ -52,5 +54,7 @@ function makeSound(key) {
     }
 }
 
-// var audio = new Audio("sounds/crash.mp3");
-// audio.play();
+function buttonAnimation(currentKey) {
+    var activationButton = document.querySelector("."+currentKey);
+    activationButton.classList.toggle("pressed");
+}
