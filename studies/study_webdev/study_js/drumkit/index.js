@@ -55,6 +55,11 @@ function makeSound(key) {
 }
 
 function buttonAnimation(currentKey) {
-    var activationButton = document.querySelector("."+currentKey);
-    activationButton.classList.toggle("pressed");
+    var activationButton = document.querySelector("." + currentKey);
+    // activationButton.classList.toggle("pressed");
+    activationButton.classList.add("pressed");
+
+    setTimeout(function () {
+        activationButton.classList.remove("pressed");
+    }, 100);
 }
