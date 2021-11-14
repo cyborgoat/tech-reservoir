@@ -3,3 +3,9 @@
 *.docx
 *.zip
 *.tar
+*.mp3
+*.mp4
+**/__pycache__/
+**/.idea/
+._.DS_Store
+**__MACOSX/
