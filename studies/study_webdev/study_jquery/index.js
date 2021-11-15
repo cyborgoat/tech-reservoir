@@ -25,18 +25,49 @@ $("button").click(function () {
     $("button").html("<em>Bye</em>");
 })
 
+///
 $("input").keydown(function (event) {
     console.log(event.key)
 
 })
 
+// actions
 $(document).keydown(function (event) {
     console.log(event.key);
     $("h1").text(event.key);
 
 })
 
-
-$("h1").on("mouseover",function (event) {
+$("h1").on("mouseover", function (event) {
     $("h1").css("color", "green");
 })
+
+// add & remove
+$("h1").before("<button>New</button>");
+$("h1").after("<button>New</button>");
+$("h1").prepend("<button>New</button>");
+$("h1").append("<button>New</button>");
+// $("button").remove();
+
+// Animation1
+// $("button").on("click", function () {
+//     // $("h1").hide();
+//     $("h1").toggle();
+//     // $("h1").fadeIn();
+//     // $("h1").fadeOut();
+//     $("h1").fadeToggle();
+// });
+// // Animation2
+// $("button").on("click", function () {
+//     $("h1").animate({
+//         opacity: 0.5,
+//         margin: "20%",
+//     })
+// });
+// Animation3
+$("button").on("click", function () {
+    $("h1").slideUp().slideDown().animate({
+        opacity: 0.5,
+        margin: "20%",
+    })
+});
