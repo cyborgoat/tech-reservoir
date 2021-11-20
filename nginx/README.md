@@ -38,8 +38,8 @@ $ make
 $ make install
 $ ls -l /etc/nginx # Check if the executable are installed successfully
 $ nginx -V # Check version & arguments
-$ cd /usr/bin
-$ ./nginx -t # Check if configuration is valid
+$ nginx -t # Check if configuration is valid
+$ nginx # start nginx
 ```
 
 ## Adding an NGINX  service
@@ -53,8 +53,11 @@ $ nginx -s stop # Stop the nginx
 $ nginx 
 ```
 
-Check nginx init script resource page
-https://www.nginx.com/resources/wiki/start/topics/examples/initscripts/
+### systemD service
+
+**Enables much much mor commands for nginx**
+
+Check [nginx init script resource page](https://www.nginx.com/resources/wiki/start/topics/examples/initscripts/)
 
 got to the Systemd and navigate to the [system service file](https://www.nginx.com/resources/wiki/start/topics/examples/systemd/)
 
@@ -65,7 +68,7 @@ $ touch /lib/systemd/system/nginx.service
 $ vim /lib/systemd/system/nginx.service
 ```
 
-Add the following context
+Add the following context to configure the nginx service
 
 ```txt
 [Unit]
@@ -75,10 +78,10 @@ Wants=network-online.target
 
 [Service]
 Type=forking
-PIDFile=var/run/nginx.pid
+PIDFile=/var/run/nginx.pid
 ExecStartPre=/usr/bin/nginx -t
 ExecStart=/usr/bin/nginx
-ExecReload=/usr/bin/nginx -s reload
+ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s QUIT $MAINPID
 PrivateTmp=true
 
