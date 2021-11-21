@@ -1,0 +1,1 @@
+alias getdates='data | tee /home/cyborgoat/fulldate.txt | cut --delimiter=" " --fields=1 | tee /home/cyborgoat/shortdate.txt | xarg echo hello'
