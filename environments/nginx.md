@@ -2,7 +2,7 @@
 
 ## Install
 
-### First Method
+### First Method (Not recommended)
 
 ```shell
 $ apt-get update

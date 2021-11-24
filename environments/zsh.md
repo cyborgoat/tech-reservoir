@@ -5,23 +5,34 @@ $ sudo apt-get install zsh
 $ zsh --version
 $ chsh -s /bin/zsh
 $ sudo apt-get install git
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+$ sudo apt-get install wget
+$ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 ```
 
 ## setup missing fonts(powerline)
 ```shell
 cd
-wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-mv PowerlineSymbols.otf ~/.fonts/
-mkdir -p .config/fontconfig/conf.d #if directory doesn't exists
-fc-cache -vf ~/.fonts/ # Clean font cache
-mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/ # move config file
-
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 ```
 
-
+```shell
+wget https://raw.githubusercontent.com/powerline/powerline/develop/font/10-powerline-symbols.conf
+ 
+wget https://raw.githubusercontent.com/powerline/powerline/develop/font/PowerlineSymbols.otf
+ 
+sudo mkdir /usr/share/fonts/OTF
+ 
+sudo cp 10-powerline-symbols.conf /usr/share/fonts/OTF/
+ 
+sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+ 
+sudo mv PowerlineSymbols.otf /usr/share/fonts/OTF/
+```
 edit ~/.zshrc  thememe to agnoster
 
 ```txt
