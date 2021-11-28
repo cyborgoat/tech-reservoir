@@ -1,12 +1,12 @@
 # Zsh & oh my zsh
 
 ```shell
-$ sudo apt-get install zsh
-$ zsh --version
-$ chsh -s /bin/zsh
-$ sudo apt-get install git
-$ sudo apt-get install wget
-$ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+sudo apt-get install zsh
+zsh --version
+chsh -s /bin/zsh
+sudo apt-get install git
+sudo apt-get install wget
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 ```
 
@@ -33,25 +33,25 @@ sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
  
 sudo mv PowerlineSymbols.otf /usr/share/fonts/OTF/
 ```
+
 edit ~/.zshrc  thememe to agnoster
 
 ```txt
 ZSH_THEME="agnoster"
 ```
 
-
 ## optional
 
-```shell
-$ sudo apt-get install autojump
-```
-
-```txt
-vim .zshrc
-#在最后一行加入，注意点后面是一个空格
-. /usr/share/autojump/autojump.sh
-```
+### zsh-autosuggestions
 
 ```shell
-$ source ~/.zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+vim ~/.zshrc
 ```
+
+plugins=(git zsh-autosuggestions)
+
+```shell
+source ~/.zshrc
+```
+
