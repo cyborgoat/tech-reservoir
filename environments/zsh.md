@@ -1,6 +1,7 @@
 # Zsh & oh my zsh
 
 ```shell
+sudo apt-get update
 sudo apt-get install zsh
 zsh --version
 chsh -s /bin/zsh

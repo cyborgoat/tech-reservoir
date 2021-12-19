@@ -2,17 +2,6 @@
 
 ## Install
 
-### First Method (Not recommended)
-
-```shell
-$ apt-get update
-$ apt-get install nginx
-$ ipconfig
-$ ls -l /etc/nginx # check for installation
-$ ps aux | grep nginx # check for processes
-$ service nginx start # start nginx
-```
-
 ### Second Method (Preferred Way)
 
 - go to https://nginx.org/en/download.html
@@ -26,6 +15,17 @@ $ apt-get install build-essential # Download the essentials for configuration bu
 $ ./configure # Check for configurations
 $ apt-get install libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev # Install necessary files to check configurations files
 
+```
+
+### First Method (Not recommended)
+
+```shell
+$ apt-get update
+$ apt-get install nginx
+$ ipconfig
+$ ls -l /etc/nginx # check for installation
+$ ps aux | grep nginx # check for processes
+$ service nginx start # start nginx
 ```
 
 ## Building nginx from source
