@@ -7,7 +7,7 @@ SOM (Self-Origanizing Maps), or SOFM (Self-Origanizing Feature Maps), is a clust
 SOM is a single-layer neural network, that is to say ---- **SOM algorithm only contains input layer and computational layer (Computational Layer)**
 
 <p align='center'>
-<img src='https://bbs-img.huaweicloud.com/blogs/img/som-1.png' width=450>
+<img src="https://bnz05pap001files.storage.live.com/y4mU-n3fB5va3WccNa94RrLdWLJNMaInvHHQq1xK9FjXjdIMkgEfionwgbAIg-Jc9xe7u5PY1jwG1_iAmKytDCCKYL3p_vtLL2hVze3_1cBeO0lXIrjoCy0IuwwL62m7bdkzO3iKYDzwYadavyjtizD9hMqcGTRmPrgovdOb-90SCs2yDx_Sc8AnwdDdBgrrOsu?width=499&height=257&cropmode=none" width="499" height="257" />
 <br>
   Structure of SOM
 </p>
@@ -47,7 +47,7 @@ First, randomly take a sample from $X$
 
 Use the Euclidean distance formula to calculate the similarity between the input vector and the weight vector of the nodes in the competition layer. $\hat{W_j}(j=1,2,3,4,5...m)$ Perform similarity comparison, the most similar neuron wins, and the weight vector is $\hat{w_j}$:
 
-$$i(x)=\argmin_j{||x(n)-w_j(n)||}$$
+$$i(x)=\underset{j}{\operatorname{argmax}} {||x(n)-w_j(n)||}$$
 
 ### 3. Update the weights of the winning neuron and neighboring neurons
 
@@ -62,11 +62,6 @@ $\alpha$ represents the learning rate
 $D$ represents the input vector
 
 ### 4. Repeat from step 2 until the number of iterations reaches the upper limit
-
-<p align='center'>
-<img src='https://bbs-img.huaweicloud.com/blogs/img/som-2.gif' width=300>
-<br>SOM Learning Procedure
-</p>
 
 ## Advantages and disadvantages
 
