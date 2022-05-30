@@ -1,13 +1,10 @@
 ```shell
 wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-# 这个版本是适合于linux的，要看清楚噢。
+# For linux users
 
-# mac用户请用：
+# For mac users
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 
-# mac用户选择图形化界面的anaconda版本也可。
-# 传送门：https://www.anaconda.com/products/individual 
-# 往下翻，选择64-Bit Graphical Installer
 ```
 
 ```shell
