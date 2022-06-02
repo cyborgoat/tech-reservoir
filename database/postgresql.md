@@ -14,7 +14,7 @@ For Mac Users
 ```shell
 $ brew install postgresql
 ```
-
+s
 ## Step 2 — Using PostgreSQL Roles and Databases
 
 ```shell
