@@ -1,10 +1,9 @@
-from pytube import YouTube
-
+import pathlib
 from pytube import YouTube 
 from tqdm import tqdm, trange
   
 # where to save 
-SAVE_PATH = "E:/videos/youtube/cs-11-711-anlp/" #to_do 
+SAVE_PATH = pathlib.Path("output") 
   
 # link of the video to be downloaded 
 # opening the file 

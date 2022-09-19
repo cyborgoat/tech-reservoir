@@ -2,23 +2,6 @@
 
 ## Install
 
-### Second Method (Preferred Way)
-
-- go to https://nginx.org/en/download.html
-- copy link of mainline version
-
-```shell
-$ apt-get update
-$ wget https://nginx.org/download/nginx-1.21.4.tar.gz # Download the file
-$ tar -zxvf nginx-1.21.4.tar.gz # Unzip the file
-$ apt-get install build-essential # Download the essentials for configuration build
-$ ./configure # Check for configurations
-$ apt-get install libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev # Install necessary files to check configurations files
-
-```
-
-### First Method (Not recommended)
-
 ```shell
 $ apt-get update
 $ apt-get install nginx
@@ -26,20 +9,6 @@ $ ipconfig
 $ ls -l /etc/nginx # check for installation
 $ ps aux | grep nginx # check for processes
 $ service nginx start # start nginx
-```
-
-## Building nginx from source
-
-nginx.org/en/docs/configure.html
-
-```shell
-$./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module
-$ make
-$ make install
-$ ls -l /etc/nginx # Check if the executable are installed successfully
-$ nginx -V # Check version & arguments
-$ nginx -t # Check if configuration is valid
-$ nginx # start nginx
 ```
 
 ## Adding an NGINX  service
