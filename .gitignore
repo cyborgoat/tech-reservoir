@@ -5,9 +5,10 @@
 *.tar
 *.mp3
 *.mp4
+**/.vscode/
 **/__pycache__/
 **/.idea/
-._.DS_Store
 **__MACOSX/
 **/node_modules/
 **/nohup.out
+._.DS_Store
