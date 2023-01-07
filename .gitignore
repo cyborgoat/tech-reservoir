@@ -10,3 +10,4 @@
 ._.DS_Store
 **__MACOSX/
 **/node_modules/
+**/nohup.out
