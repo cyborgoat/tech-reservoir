@@ -10,11 +10,9 @@ Google uses PageRank to make those webpages with more "rank/importance" improve 
 
 PageRank is a link analysis algorithm. It achieves the purpose of "measure the relative importance of an element in the collection" by assigning numerical weights to the elements in the hyperlink collection, and PageRank can use any element with ** A collection of entities that refer to each other**.
 
-<p align='center'>
-<img src='https://bnz05pap001files.storage.live.com/y4mtdCTrGe6jkK8JMCSsumA_L66vxiB4BlWxqsdlYUekNpadBOmmltq02ImT_YAqgv8GviQo9bqQkOHGXV61aPIu8dVKIk2JTFAvZ8BzLM_fse7DlR3ZrjgpMMZa19Pe37P7z4Dh_lKs9UGfzFl26ox5VOpIaWANdL59RSPlI-KaLtjzUMOkZRmoH1m5cdM8MK-?width=700&height=495&cropmode=none' width=450>
-<br>
-PageRank Conceptual Picture
-</p>
+![page-rank-ref](https://bbs-img.huaweicloud.com/blogs/img/pagerank.jpg)
+
+
 
 ## Algorithm
 

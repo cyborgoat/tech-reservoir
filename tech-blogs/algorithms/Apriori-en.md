@@ -29,7 +29,7 @@ Confidence refers to the probability that event B will appear after event X appe
 
 Note that the shortcomings of the confidence formula are more obvious. For example, beer itself is very popular, so the confidence in buying beer after buying apples will also be high. So it may be misleading, and the third way is fine to olve such a problem.
 
-###3. Lift
+### 3. Lift
 
 The lift indicates the possibility of Y appearing after the event X appears and the popularity of the event Y is known. The following figure explains the calculation method of the lift
 
