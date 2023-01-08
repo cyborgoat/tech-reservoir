@@ -1,0 +1,32 @@
+[
+    {
+        "dir": "machine-learning/apriori.md",
+        "title": "Apriori",
+        "description": "This is description for apriori",
+        "created_on": "2023-01-03",
+        "tags": [
+            "machine-learning",
+            "data-mining"
+        ]
+    },
+    {
+        "dir": "machine-learning/page_rank.md",
+        "title": "Page Rank",
+        "description": "This is description for page rank",
+        "created_on": "2023-01-04",
+        "tags": [
+            "machine-learning",
+            "ranking"
+        ]
+    },
+    {
+        "dir": "machine-learning/som.md",
+        "title": "SOM Algorithm",
+        "description": "This is description for som",
+        "created_on": "2023-01-05",
+        "tags": [
+            "machine-learning",
+            "clustering"
+        ]
+    }
+]
