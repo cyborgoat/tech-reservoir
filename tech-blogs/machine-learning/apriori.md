@@ -16,16 +16,13 @@ Association rule analysis can be used to explain how two items are related. Ther
 
 The degree of support expresses the "popularity" of the item. Using the following illustration, the degree of support for apples is the probability of apples appearing in 8 transactions.
 
-
-<center><img src='https://bbs-img.huaweicloud.com/blogs/img/0.png' width=150></center>
-<center><img src='https://bbs-img.huaweicloud.com/blogs/img/1(19).png' width=300></center>
-
+![apriori-img-1](https://bbs-img.huaweicloud.com/blogs/img/0.png)
 
 ### 2. Confidence
 
 Confidence refers to the probability that event B will appear after event X appears. The following legend means that it is known that apples have been purchased, and the amount of beer purchase confidence formula
 
-<center><img src='https://bbs-img.huaweicloud.com/blogs/img/2(30).png' width=300></center>
+<!-- <center><img src='https://bbs-img.huaweicloud.com/blogs/img/2(30).png' width=300></center> -->
 
 Note that the shortcomings of the confidence formula are more obvious. For example, beer itself is very popular, so the confidence in buying beer after buying apples will also be high. So it may be misleading, and the third way is fine to olve such a problem.
 
@@ -33,7 +30,7 @@ Note that the shortcomings of the confidence formula are more obvious. For examp
 
 The lift indicates the possibility of Y appearing after the event X appears and the popularity of the event Y is known. The following figure explains the calculation method of the lift
 
-<center><img src='https://bbs-img.huaweicloud.com/blogs/img/3(27).png' width=300></center>
+<!-- <center><img src='https://bbs-img.huaweicloud.com/blogs/img/3(27).png' width=300></center> -->
 
 ## Apriori algorithm
 
@@ -67,25 +64,24 @@ FP represents a frequent pattern, which connects similar elements through links,
 
 The flow of the FP-growth algorithm is: first construct the FP tree, and then use it to mine frequent itemsets. When constructing the FP tree, you need to scan both sides of the data set. The first pass is used to count the frequency, and the second pass is used to consider frequent itemsets. The following example illustrates the FP tree.
 
-
-<center>
+<!-- <center>
 <img src='https://bbs-img.huaweicloud.com/blogs/img/4(21).png' width=300>
-</center>
+</center> -->
 
 In combination with the minimum support threshold in the Apriori algorithm, the minimum support is defined as 3, combined with the data in the above table, those that do not meet the minimum support requirements will not appear in the final FP tree, and FP is constructed accordingly Tree, and uses a head pointer table to point to the first instance of a given type, and quickly access all elements in the FP tree. The constructed FP tree with head pointers is as follows:
 
- <center>
+ <!-- <center>
 <img src='https://bbs-img.huaweicloud.com/blogs/img/5(17).png' width=300>
-</center>
+</center> -->
 
 Combine the drawn FP tree with the leading pointer table to filter the data in the table, and the sorting is as follows:
 
- <center>
+ <!-- <center>
 <img src='https://bbs-img.huaweicloud.com/blogs/img/6(16).png' width=300>
- </center>
+ </center> -->
 
 After the data items are filtered and sorted, the FP tree can be constructed, starting from NULL, and constantly adding filtered and sorted frequent itemsets to it. The process can be expressed as:
 
- <center>
+ <!-- <center>
 <img src='https://bbs-img.huaweicloud.com/blogs/img/7(14).png' width=450>
- </center>
+ </center> -->

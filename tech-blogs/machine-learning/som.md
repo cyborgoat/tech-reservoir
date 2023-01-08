@@ -6,11 +6,7 @@ SOM (Self-Origanizing Maps), or SOFM (Self-Origanizing Feature Maps), is a clust
 
 SOM is a single-layer neural network, that is to say ---- **SOM algorithm only contains input layer and computational layer (Computational Layer)**
 
-<p align='center'>
-<img src="https://bnz05pap001files.storage.live.com/y4mU-n3fB5va3WccNa94RrLdWLJNMaInvHHQq1xK9FjXjdIMkgEfionwgbAIg-Jc9xe7u5PY1jwG1_iAmKytDCCKYL3p_vtLL2hVze3_1cBeO0lXIrjoCy0IuwwL62m7bdkzO3iKYDzwYadavyjtizD9hMqcGTRmPrgovdOb-90SCs2yDx_Sc8AnwdDdBgrrOsu?width=499&height=257&cropmode=none" width="499" height="257" />
-<br>
-  Structure of SOM
-</p>
+![som-img-0](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/TrainSOM.gif/440px-TrainSOM.gif)
 
 The calculation layer of the SOM is also called the competition layer or the output layer. This layer is a structure composed of a series of neurons (neurons). (In a two-dimensional structure), where the nodes of the computing layer and the nodes of the input layer are fully connected. The computing layer can discretize the input of any dimension into a one-dimensional or two-dimensional discrete space, that is, The SOM algorithm can play a role in dimensionality reduction-mapping high-dimensional data input to the dimensional space defined by the computing layer. In k-means, we need to specify the value of k in advance, that is, the number of clusters But in SOM, you need to specify a topological structure (the geometric relationship between clusters) in advance. In the topology, a node is a cluster.
 
