@@ -1,6 +1,6 @@
 [
     {
-        "dir": "machine-learning/apriori.md",
+        "path": "machine-learning/apriori.md",
         "title": "Apriori",
         "description": "This is description for apriori",
         "created_on": "2023-01-03",
@@ -10,7 +10,7 @@
         ]
     },
     {
-        "dir": "machine-learning/page_rank.md",
+        "path": "machine-learning/page_rank.md",
         "title": "Page Rank",
         "description": "This is description for page rank",
         "created_on": "2023-01-04",
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "dir": "machine-learning/som.md",
+        "path": "machine-learning/som.md",
         "title": "SOM Algorithm",
         "description": "This is description for som",
         "created_on": "2023-01-05",
@@ -30,7 +30,7 @@
         ]
     },
     {
-        "dir": "machine-learning/kl_divergence.md",
+        "path": "machine-learning/kl_divergence.md",
         "title": "KL Divergence",
         "description": "This is description for KL divergence",
         "created_on": "2023-01-09",
