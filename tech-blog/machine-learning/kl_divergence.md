@@ -8,8 +8,6 @@ tags:
   - similarity
 ---
 
-# KL Divergence
-
 KL divergence or relative entropy is a measure of how one probability distribution is different from a reference probability distribution.
 
 ## Core concept

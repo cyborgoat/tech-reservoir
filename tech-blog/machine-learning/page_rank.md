@@ -8,22 +8,15 @@ tags:
   - ranking
 ---
 
-
-# Machine Learning --- PageRank Algorithm
-
 ## Introduction
 
 PageRank is an algorithm used by Google to rank web pages in its search engine search results. The algorithm is named after Larry Page, one of the founders of Google. Google's search engine uses it to analyze the relevance of web pages. And importance is often used in search engine optimization as one of the factors to evaluate the effectiveness of web page optimization.
 
 Google uses PageRank to make those webpages with more "rank/importance" improve the ranking of the website in the search results, thereby improving the relevance and quality of the search results. The higher the PR value (how to calculate it will be described below), the higher the page is The more popular. Currently, PageRank is no longer the only algorithm Google uses to rank web pages, but it is the earliest and most famous algorithm.
 
-
-
-PageRank is a link analysis algorithm. It achieves the purpose of "measure the relative importance of an element in the collection" by assigning numerical weights to the elements in the hyperlink collection, and PageRank can use any element with ** A collection of entities that refer to each other**.
+PageRank is a link analysis algorithm. It achieves the purpose of "measure the relative importance of an element in the collection" by assigning numerical weights to the elements in the hyperlink collection, and PageRank can use any element with **A collection of entities that refer to each other**.
 
 ![page-rank-ref](https://bbs-img.huaweicloud.com/blogs/img/pagerank.jpg)
-
-
 
 ## Algorithm
 
@@ -39,15 +32,12 @@ If all pages are connected to A, then the PR value of A becomes the sum of the P
 
 ![](https://bbs-img.huaweicloud.com/blogs/img/fn1.png)
 
-
 If B is linked to A and C, C is linked to A, and D is linked to A, B, C. There is only one vote in total for the first page. So B gives A and C half votes for each page. By analogy, only one-third of D's votes are added to A's PR value:
 ![](https://bbs-img.huaweicloud.com/blogs/img/fn2.png)
-
 
 Using a mathematical formula to express the above scenario, the total number of times that each page is directed to other web pages $L(x)$ score the PR value of the page and add it to the page pointed to:
 
 ![](https://bbs-img.huaweicloud.com/blogs/img/fn3.png)
-
 
 Finally, all these PR values ​​are converted into percentages and multiplied by a correction coefficient $d$. Since the PR value passed by "webpages without external links" will be 0, and this will recursively cause the calculation of the PR value of the pages that point to it to also be zero, so assign each page a minimum value (1- d)/N:
 
@@ -66,7 +56,6 @@ After that, the damping factor $d$(damping factor) is introduced. Assuming that 
 Therefore, for page i, the calculation formula of the PR value is:
 
 ![](https://bbs-img.huaweicloud.com/blogs/img/fn5.png)
-
 
 Here, p1,p2,...,pn is the target page pi, M(pi) is the set of pages, L(pj) is the number of pages linked out, and N is the number of all pages
 

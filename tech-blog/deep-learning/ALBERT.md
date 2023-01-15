@@ -9,8 +9,6 @@ tags:
   - BERT
 ---
 
-# 自然语言处理 --- ALBERT
-
 [\[论文链接\]](https://arxiv.org/pdf/1909.11942.pdf)
 
 > 本文末会提供一个基于Transformers(深度学习开源库)的简易ALBERT算法多选题任务推理Demo(暂不提供Fine Tuning代码)
@@ -19,7 +17,7 @@ ALBERT: A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS
 
 在NLP模型预训练过程中, 提升模型规模往往可以提高模型表现. 但是, 很多时候由于GPU内存有限的原因, 导致了模型训练时间变长. ALBERT提出了两种参数压缩的方法来降低BERT的内存占用,同时提高训练速度:
 
-- 第一种方法是通过嵌入参数因式分解(Factorized Embedding Parameterization),将巨大的词嵌入矩阵分解为两个小型矩阵. 
+- 第一种方法是通过嵌入参数因式分解(Factorized Embedding Parameterization),将巨大的词嵌入矩阵分解为两个小型矩阵.
 - 第二种方法是跨层参数共享(Cross-Layer Parameter Sharing).
 
 通过以上两种方法, 一个近似于BERT-large参数配置的ALBERT模型只需要原模型$\frac{1}{18}$的参数量就能达到1.7倍的训练速度.
@@ -79,7 +77,6 @@ from transformers import AlbertTokenizer, AlbertForMultipleChoice
 from transformers import BertTokenizer, AlbertModel
 ```
 
-
 ```python
 tokenizer = AlbertTokenizer.from_pretrained('albert_chinese_small')
 model = AlbertForMultipleChoice.from_pretrained('albert_chinese_small')
@@ -93,8 +90,6 @@ model = AlbertForMultipleChoice.from_pretrained('albert_chinese_small')
     - This IS NOT expected if you are initializing AlbertForMultipleChoice from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
     Some weights of AlbertForMultipleChoice were not initialized from the model checkpoint at pre_trained_models/albert_chinese_small and are newly initialized: ['classifier.bias', 'classifier.weight']
     You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-    
-
 
 ```python
 # 话题
@@ -111,7 +106,6 @@ labels = torch.FloatTensor(labels_list).unsqueeze(0)  # choice0 is correct, , ba
 size = len(choices)
 ```
 
-
 ```python
 encoding = tokenizer([prompt for _ in range(size)],choices, return_tensors='pt', padding=True)
 outputs = model(**{k: v.unsqueeze(0) for k, v in encoding.items()}, labels=labels)  # batch size is 1
@@ -121,8 +115,6 @@ print(logits)
 ```
 
     tensor([[ 0.0100,  0.2225, -0.0217, -0.0517]], grad_fn=<ViewBackward0>)
-    
-
 
 ```python
 from torch import nn
@@ -133,30 +125,17 @@ print(soft_maxed_logits)
 ```
 
     tensor([[0.2412, 0.2983, 0.2337, 0.2268]], grad_fn=<SoftmaxBackward0>)
-    
-
 
 ```python
 result = torch.argmax(soft_maxed_logits).detach().numpy()
 result
 ```
 
-
-
-
     array(1, dtype=int64)
-
-
-
 
 ```python
 # 反馈最终选择
 choices[result]
 ```
 
-
-
-
     '他们主要负责AI算法的研究和落地.'
-
-

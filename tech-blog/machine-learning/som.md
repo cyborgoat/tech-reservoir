@@ -8,8 +8,6 @@ tags:
   - clustering
 ---
 
-# Machine learning --- Self-organizing map network SOM clustering algorithm
-
 SOM (Self-Origanizing Maps), or SOFM (Self-Origanizing Feature Maps), is a clustering algorithm based on neural networks, which is an unsupervised learning algorithm.
 
 ## The basic structure of SOM

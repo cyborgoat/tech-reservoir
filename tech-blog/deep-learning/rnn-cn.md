@@ -9,10 +9,6 @@ tags:
   - BERT
 ---
 
-
-
-# 深入理解RNN结构
-
 近年来,自然语言处理成为了人工智能界的一个热门话题, LSTM, Attention, Transformer 等模型结构大火,更基于这些理论衍生出了各种强大的预训练模型,如BERT,GPT3等.
 
 这些算法的共有的核心思想之一便是RNN (Recurrent Neural Network),本文将尽可能详细的介绍RNN的逻辑和实现原理(会包含核心公式,不会介绍具体训练过程的公式推导)
