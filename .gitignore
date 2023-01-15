@@ -11,4 +11,5 @@
 **__MACOSX/
 **/node_modules/
 **/nohup.out
+**/blog_list.json
 ._.DS_Store
