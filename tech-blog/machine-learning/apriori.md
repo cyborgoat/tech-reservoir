@@ -4,8 +4,8 @@ summary: A brief summary of commands to install postgres database
 author: Junxiao Guo
 date: 2021-01-01
 tags:
-  - database
-  - postgres
+  - machine-learning
+  - data-mining
 ---
 
 # Apriori & FP-growth Algorithm

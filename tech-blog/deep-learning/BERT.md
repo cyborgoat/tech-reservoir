@@ -1,5 +1,16 @@
-# 自然语言处理 --- BERT
+---
+title: Pre-trained Model --- BERT
+summary: An introduction to BERT algorithm and a simple example to use this model
+author: Junxiao Guo
+date: 2021-03-05
+tags:
+  - deep-learning
+  - nlp
+  - BERT
+---
 
+
+# 自然语言处理 --- BERT
 
 ## Abstract
 
@@ -15,10 +26,8 @@ BERT的整体流程包含两个步骤: `pre-training` and `fine-tuning`.
 
 在 pre-training 中, 模型会在无监督的情况下通过不同的预训练任务中进行训练. 在 fine-tuning 过程中, BERT 首先根据 pre-training 过程中学习到的参数进行初始化, 所有的参数会通过有监督的方式来训练下游任务. 每个下游任务都有单独的微调模型, 即使它们是使用相同的预训练参数初始化的.
 
-
 <img src='https://bbs-img.huaweicloud.com/blogs/img/paperfig-1.PNG'>
 BERT的 pre-training 和 fine-truning的整体流程
-
 
 BERT的特点之一就是它在不同任务下的的统一化结构, 这使得能够最小化预训练过程和微调过程中的模型结构.
 
@@ -43,7 +52,6 @@ BERT 使用了 *WordPiece embeddings* 做为参考, 其中包含了30,000个 tok
 
 ![](https://bbs-img.huaweicloud.com/blogs/img/paperfig-2.PNG)
 BERT Input Respresentation
-
 
 ### 预训练BERT
 

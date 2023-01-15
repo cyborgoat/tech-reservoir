@@ -1,3 +1,16 @@
+---
+title: Understanding RNN architecture
+summary: An introduction to recurrent neural network (RNN) by using several examples.
+author: Junxiao Guo
+date: 2022-08-05
+tags:
+  - deep-learning
+  - nlp
+  - BERT
+---
+
+
+
 # 深入理解RNN结构
 
 近年来,自然语言处理成为了人工智能界的一个热门话题, LSTM, Attention, Transformer 等模型结构大火,更基于这些理论衍生出了各种强大的预训练模型,如BERT,GPT3等.
