@@ -15,7 +15,7 @@ for d in category_dirs:
         fm = frontmatter.load(Path(d).joinpath(f))
         if not fm.metadata or set(fm.metadata.keys()) != required_fields:
             continue
-        info = {'category': d.split('/')[1]}
+        info = {'category': d.split(os.sep)[1]}
         info['slug'] = f.split('.')[0]
         info.update(fm.metadata)
         res.append(info)
