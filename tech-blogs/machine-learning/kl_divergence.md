@@ -1,3 +1,13 @@
+---
+title: KL Divergence 
+summary: KL divergence or relative entropy is a measure of how one probability distribution is different from a reference probability distribution.
+author: Junxiao Guo
+date: 2023-01-01
+tags:
+  - machine-learning
+  - similarity
+---
+
 # KL Divergence
 
 KL divergence or relative entropy is a measure of how one probability distribution is different from a reference probability distribution.
@@ -22,15 +32,13 @@ $$\log{\left[\frac{p_\theta(x_i)}{{p_\phi(x_i)}}\right]}$$
 
 which is called the `Log Likelihood Ratio`.
 
-
-
 ## Expected Value
 
 Before we go to any further, let's think about what we are truly looking for: **A number which represents the average difference between two distributions.**
 
 Since we are dealing with random variables, there is no such term for "average", but `Expected Value` instead.
 
-The expected value for `discrete random variable` is: 
+The expected value for `discrete random variable` is:
 
 $$\mathbb{E}_{p_\theta}\left[h\left(X\right)\right] = \sum_{i=1}^{\inf}{h\left(x_i\right)}{p_\theta}\left(x_i\right)$$
 
@@ -57,7 +65,6 @@ We can make the KL divergence concrete with a worked example.
 
 Consider a random variable with three events as different colors. We may have two different probability distributions for this variable; for example:
 
-
 ```python
 ...
 # define distributions
@@ -69,7 +76,6 @@ q = [0.80, 0.15, 0.05]
 We can plot a bar chart of these probabilities to compare them directly as probability histograms.
 
 The complete example is listed below.
-
 
 ```python
 # plot of distributions
@@ -91,18 +97,11 @@ pyplot.show()
 
     P=1.000 Q=1.000
 
-
-
-    
 ![png](output_9_1.png)
-    
-
 
 Running the example creates a histogram for each probability distribution, allowing the probabilities for each event to be directly compared.
 
 We can see that indeed the distributions are different.
-
-
 
 Next, we can develop a function to calculate the KL divergence between the two distributions.
 
@@ -110,15 +109,13 @@ We will use log base-2 to ensure the result has units in bits.
 
 We can then use this function to calculate the KL divergence of P from Q, as well as the reverse, Q from P.
 
-
-
 ```python
 # example of calculating the kl divergence between two mass functions
 from math import log2
 
 # calculate the kl divergence
 def kl_divergence(p, q):
-	return sum(p[i] * log2(p[i]/q[i]) for i in range(len(p)))
+ return sum(p[i] * log2(p[i]/q[i]) for i in range(len(p)))
 
 # define distributions
 p = [0.10, 0.40, 0.50]
@@ -133,4 +130,3 @@ print('KL(Q || P): %.3f bits' % kl_qp)
 
     KL(P || Q): 1.927 bits
     KL(Q || P): 2.022 bits
-

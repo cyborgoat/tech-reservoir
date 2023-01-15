@@ -1,0 +1,62 @@
+[
+    {
+        "author": "Junxiao Guo",
+        "category": "database",
+        "date": "2021-01-01",
+        "slug": "postgresql",
+        "summary": "A brief summary of commands to install postgres database",
+        "tags": [
+            "database",
+            "postgres"
+        ],
+        "title": "Installation for postgres database"
+    },
+    {
+        "author": "Junxiao Guo",
+        "category": "machine-learning",
+        "date": "2021-01-01",
+        "slug": "apriori",
+        "summary": "A brief summary of commands to install postgres database",
+        "tags": [
+            "database",
+            "postgres"
+        ],
+        "title": "Apriori & FP-growth Algorithm"
+    },
+    {
+        "author": "Junxiao Guo",
+        "category": "machine-learning",
+        "date": "2023-01-01",
+        "slug": "kl_divergence",
+        "summary": "KL divergence or relative entropy is a measure of how one probability distribution is different from a reference probability distribution.",
+        "tags": [
+            "machine-learning",
+            "similarity"
+        ],
+        "title": "KL Divergence"
+    },
+    {
+        "author": "Junxiao Guo",
+        "category": "machine-learning",
+        "date": "2022-5-10",
+        "slug": "som",
+        "summary": "SOM (Self-Origanizing Maps), or SOFM (Self-Origanizing Feature Maps), is a clustering algorithm based on neural networks, which is an unsupervised learning algorithm.",
+        "tags": [
+            "machine-learning",
+            "clustering"
+        ],
+        "title": "Self-organizing Map Network"
+    },
+    {
+        "author": "Junxiao Guo",
+        "category": "machine-learning",
+        "date": "2022-10-01",
+        "slug": "page_rank",
+        "summary": "PageRank is an algorithm used by Google to rank web pages in its search engine search results. The algorithm is named after Larry Page, one of the founders of Google.",
+        "tags": [
+            "machine-learning",
+            "ranking"
+        ],
+        "title": "PageRank Algorithm"
+    }
+]

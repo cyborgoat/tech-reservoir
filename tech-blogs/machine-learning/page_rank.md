@@ -1,3 +1,14 @@
+---
+title: PageRank Algorithm 
+summary: PageRank is an algorithm used by Google to rank web pages in its search engine search results. The algorithm is named after Larry Page, one of the founders of Google.
+author: Junxiao Guo
+date: 2022-10-01
+tags:
+  - machine-learning
+  - ranking
+---
+
+
 # Machine Learning --- PageRank Algorithm
 
 ## Introduction
