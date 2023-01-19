@@ -9,6 +9,11 @@ tags:
   - installation
 ---
 
+- [Installation](#installation)
+  - [Rustup: the Rust installer and version management tool](#rustup-the-rust-installer-and-version-management-tool)
+  - [Mirror settings for users in China](#mirror-settings-for-users-in-china)
+
+
 Rust is a multi-paradigm, high-level, general-purpose programming language. Rust emphasizes performance, type safety, and concurrency. Rust enforces memory safety—that is, that all references point to valid memory—without requiring the use of a garbage collector or reference counting present in other memory-safe languages.
 
 This article goes through how to install cargo on you local machine and tutorial on mirror settings if you are located in China.

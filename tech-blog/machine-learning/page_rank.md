@@ -8,6 +8,13 @@ tags:
   - ranking
 ---
 
+- [Introduction](#introduction)
+- [Algorithm](#algorithm)
+  - [Basic algorithm ideas](#basic-algorithm-ideas)
+  - [Advanced](#advanced)
+- [shortcoming](#shortcoming)
+
+
 ## Introduction
 
 PageRank is an algorithm used by Google to rank web pages in its search engine search results. The algorithm is named after Larry Page, one of the founders of Google. Google's search engine uses it to analyze the relevance of web pages. And importance is often used in search engine optimization as one of the factors to evaluate the effectiveness of web page optimization.

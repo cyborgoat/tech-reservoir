@@ -1,5 +1,5 @@
 ---
-title: Installation for postgres database
+title: Postgres Database Installation
 summary: A brief summary of commands to install postgres database
 author: Junxiao Guo
 date: 2021-01-01
@@ -8,6 +8,8 @@ tags:
   - postgres
 ---
 
+- [Installation](#installation)
+- [Step 2 — Using PostgreSQL Roles and Databases](#step-2--using-postgresql-roles-and-databases)
 
 ## Installation
 

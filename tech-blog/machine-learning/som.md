@@ -8,6 +8,21 @@ tags:
   - clustering
 ---
 
+- [The basic structure of SOM](#the-basic-structure-of-som)
+- [SOM learning process](#som-learning-process)
+  - [1. Competitive Process](#1-competitive-process)
+  - [2. Cooperation Process](#2-cooperation-process)
+  - [3. Adaptation Process](#3-adaptation-process)
+- [SOM algorithm flow](#som-algorithm-flow)
+  - [1. Vector normalization](#1-vector-normalization)
+  - [2. Random sampling, and find the winning neuron (best matching unit, BMU)](#2-random-sampling-and-find-the-winning-neuron-best-matching-unit-bmu)
+  - [3. Update the weights of the winning neuron and neighboring neurons](#3-update-the-weights-of-the-winning-neuron-and-neighboring-neurons)
+  - [4. Repeat from step 2 until the number of iterations reaches the upper limit](#4-repeat-from-step-2-until-the-number-of-iterations-reaches-the-upper-limit)
+- [Advantages and disadvantages](#advantages-and-disadvantages)
+  - [advantage](#advantage)
+  - [shortcoming](#shortcoming)
+
+
 SOM (Self-Origanizing Maps), or SOFM (Self-Origanizing Feature Maps), is a clustering algorithm based on neural networks, which is an unsupervised learning algorithm.
 
 ## The basic structure of SOM

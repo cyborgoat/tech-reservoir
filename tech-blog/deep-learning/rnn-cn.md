@@ -9,6 +9,24 @@ tags:
   - BERT
 ---
 
+- [传统神经网络的局限性](#传统神经网络的局限性)
+- [The Sliding Predictor](#the-sliding-predictor)
+  - [Sliding Predictor \& CNN](#sliding-predictor--cnn)
+  - [Finite-response Model](#finite-response-model)
+  - [Problems](#problems)
+- [Long Term Dependency](#long-term-dependency)
+  - [NARX Network](#narx-network)
+  - [系统的定义memory](#系统的定义memory)
+  - [Jordan Network](#jordan-network)
+  - [Elman Networks](#elman-networks)
+- [The State-space Model \& RNN](#the-state-space-model--rnn)
+  - [State-space Model \& Single Hidden Layer RNN](#state-space-model--single-hidden-layer-rnn)
+  - [Multiple recurrent layer RNN](#multiple-recurrent-layer-rnn)
+- [核心公式](#核心公式)
+- [RNN的变种](#rnn的变种)
+- [总结](#总结)
+
+
 近年来,自然语言处理成为了人工智能界的一个热门话题, LSTM, Attention, Transformer 等模型结构大火,更基于这些理论衍生出了各种强大的预训练模型,如BERT,GPT3等.
 
 这些算法的共有的核心思想之一便是RNN (Recurrent Neural Network),本文将尽可能详细的介绍RNN的逻辑和实现原理(会包含核心公式,不会介绍具体训练过程的公式推导)
