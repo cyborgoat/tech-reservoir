@@ -31,7 +31,7 @@ If you need to update your Rust, you can simply enter `rustup update`.
 
 ### Mirror settings for users in China
 
-1. Go to folder  `/Users/baoyachi/.cargo/` (create one if you don't have it yet)
+1. Go to folder  `/Users/{yourname}/.cargo/` (create one if you don't have it yet)
 2. Create a file named `config.toml`
 3. Add the following content to `config.toml`
 
