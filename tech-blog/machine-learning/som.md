@@ -18,7 +18,7 @@ SOM is a single-layer neural network, that is to say ---- **SOM algorithm only c
 
 The calculation layer of the SOM is also called the competition layer or the output layer. This layer is a structure composed of a series of neurons (neurons). (In a two-dimensional structure), where the nodes of the computing layer and the nodes of the input layer are fully connected. The computing layer can discretize the input of any dimension into a one-dimensional or two-dimensional discrete space, that is, The SOM algorithm can play a role in dimensionality reduction-mapping high-dimensional data input to the dimensional space defined by the computing layer. In k-means, we need to specify the value of k in advance, that is, the number of clusters But in SOM, you need to specify a topological structure (the geometric relationship between clusters) in advance. In the topology, a node is a cluster.
 
-1.The goal of SOM is to use points in a low-dimensional (usually two-dimensional or three-dimensional) target space to represent all points in a high-dimensional space, and to maintain the distance and proximity relationship (topological relationship) between the points as much as possible.
+1. The goal of SOM is to use points in a low-dimensional (usually two-dimensional or three-dimensional) target space to represent all points in a high-dimensional space, and to maintain the distance and proximity relationship (topological relationship) between the points as much as possible.
 2. The SOM algorithm is different from other artificial neural network (ANN) models. SOM uses **Competitive Learning** instead of error correction learning (such as backpropagation neural networks). And SOM uses the neighborhood function to Keep the topological properties of the input
 
 ## SOM learning process
@@ -71,17 +71,17 @@ $D$ represents the input vector
 
 ### advantage
 
--SOM imposes the neighbor relationship on the cluster centroid, which is conducive to the interpretation of the clustering results
--With dimensionality reduction function
--Strong visualization
--Self-organization ability
--Unsupervised learning
--Keep topology information
+- SOM imposes the neighbor relationship on the cluster centroid, which is conducive to the interpretation of the clustering results
+- With dimensionality reduction function
+- Strong visualization
+- Self-organization ability
+- Unsupervised learning
+- Keep topology information
 
 ### shortcoming
 
--The main disadvantage of SOM is that the algorithm requires neuron weights to be necessary and sufficient to cluster the input. If SOM provides too little or too much information in the weight layer, it will have a greater impact on the result
--Need to define domain function
--SOM lacks a specific objective function
--A SOM cluster usually does not correspond to a single natural thickness, and there may be merging and splitting of natural clusters
--SOM does not guarantee convergence
+- The main disadvantage of SOM is that the algorithm requires neuron weights to be necessary and sufficient to cluster the input. If SOM provides too little or too much information in the weight layer, it will have a greater impact on the result
+- Need to define domain function
+- SOM lacks a specific objective function
+- A SOM cluster usually does not correspond to a single natural thickness, and there may be merging and splitting of natural clusters
+- SOM does not guarantee convergence
