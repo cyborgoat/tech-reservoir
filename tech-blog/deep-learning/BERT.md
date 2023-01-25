@@ -9,15 +9,6 @@ tags:
   - BERT
 ---
 
-- [Abstract](#abstract)
-- [Masked Language Model](#masked-language-model)
-- [BERT](#bert)
-  - [预训练BERT](#预训练bert)
-    - [Task #1: MLM (Masked Language Model)](#task-1-mlm-masked-language-model)
-    - [Task #2: NSP (Next Sentence Prediction)](#task-2-nsp-next-sentence-prediction)
-  - [Fine-tuning BERT](#fine-tuning-bert)
-
-
 ## Abstract
 
 BERT 全称为 Bidirectional Encoder Representations from Transformers. BERT 旨在通过对所有层的左右上下文进行联合调节,从未标记的文本中预训练深度双向表示. 因此,预训练的 BERT 模型可以仅通过一个额外的输出层进行微调,从而为各种任务(例如问答和语言推理)创建最先进的模型,而无需对特定于任务的架构进行大量修改.

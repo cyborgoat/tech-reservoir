@@ -9,15 +9,6 @@ tags:
   - BERT
 ---
 
-- [ALBERT核心结构](#albert核心结构)
-  - [模型结构选择](#模型结构选择)
-  - [嵌入参数分解(Factorized embedding parameterization)](#嵌入参数分解factorized-embedding-parameterization)
-  - [跨层参数共享(Cross-layer parameter sharing)](#跨层参数共享cross-layer-parameter-sharing)
-  - [句间连贯性损失(Inter-sentence coherence loss)](#句间连贯性损失inter-sentence-coherence-loss)
-  - [模型配置](#模型配置)
-- [ALBERT多选题任务推理demo](#albert多选题任务推理demo)
-
-
 [\[论文链接\]](https://arxiv.org/pdf/1909.11942.pdf)
 
 > 本文末会提供一个基于Transformers(深度学习开源库)的简易ALBERT算法多选题任务推理Demo(暂不提供Fine Tuning代码)

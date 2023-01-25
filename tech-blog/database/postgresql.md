@@ -8,9 +8,6 @@ tags:
   - postgres
 ---
 
-- [Installation](#installation)
-- [Step 2 — Using PostgreSQL Roles and Databases](#step-2--using-postgresql-roles-and-databases)
-
 ## Installation
 
 For ubuntu 20.04
