@@ -5,7 +5,6 @@ author: Junxiao Guo
 date: 2021-01-01
 tags:
   - python
-  - environment
   - conda
 ---
 

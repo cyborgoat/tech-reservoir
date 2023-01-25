@@ -5,8 +5,6 @@ author: Junxiao Guo
 date: 2023-01-19
 tags:
   - rust
-  - programming-language
-  - installation
 ---
 
 - [Installation](#installation)

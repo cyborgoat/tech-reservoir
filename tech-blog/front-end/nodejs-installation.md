@@ -5,9 +5,7 @@ author: Junxiao Guo
 date: 2023-01-19
 tags:
   - node.js
-  - programming-language
-  - web-development
-  - installation
+  - frontend
 ---
 
 ## Installation
@@ -23,7 +21,3 @@ For users in China, please add the following mirror settings to make sure your `
 ```bash
 npm config set registry https://registry.npmirror.com
 ```
-
-
-
-

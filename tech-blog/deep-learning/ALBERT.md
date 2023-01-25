@@ -4,9 +4,8 @@ summary: An introduction to ALBERT algorithm and a simple example to use this mo
 author: Junxiao Guo
 date: 2022-08-05
 tags:
-  - deep-learning
+  - pre-trained model
   - nlp
-  - BERT
 ---
 
 [\[论文链接\]](https://arxiv.org/pdf/1909.11942.pdf)
