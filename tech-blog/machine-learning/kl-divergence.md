@@ -8,12 +8,6 @@ tags:
   - similarity
 ---
 
-- [Core concept](#core-concept)
-- [Log Likelihood Ratio](#log-likelihood-ratio)
-- [Expected Value](#expected-value)
-- [Formula](#formula)
-- [Example: Calculating KL Divergence in Python](#example-calculating-kl-divergence-in-python)
-
 KL divergence or relative entropy is a measure of how one probability distribution is different from a reference probability distribution.
 
 ## Core concept
