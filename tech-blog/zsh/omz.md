@@ -1,5 +1,5 @@
 ---
-title: Install OH-MY-ZSH in Ubuntu 20.04 
+title: Install oh-my-zsh in Ubuntu 20.04 
 summary: OH-MY-ZSH is an open-source framework for managing ZSH configuration and is community-driven. It comes bundled with tons of helpful functions, plugins, helpers, themes, and a few things that will make you better at the terminal. There are currently 275+ plugins and 150 themes supported.
 author: Junxiao Guo
 date: 2023-01-27
