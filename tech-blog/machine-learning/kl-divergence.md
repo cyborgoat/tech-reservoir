@@ -2,7 +2,7 @@
 title: KL Divergence 
 summary: KL divergence or relative entropy is a measure of how one probability distribution is different from a reference probability distribution.
 author: Junxiao Guo
-date: 2023-01-01
+date: 2023-01-29
 tags:
   - machine-learning
   - similarity
