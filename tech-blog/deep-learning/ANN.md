@@ -15,7 +15,7 @@ The MNIST dataset (Mixed National Institute of Standards and Technology database
 
 This tutorial will use PyTorch to implement a simple neural network model to recognize handwritten digits
 
-## 初始化
+## Initialize
 
 ```python
 import torch
