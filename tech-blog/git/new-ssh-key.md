@@ -1,6 +1,6 @@
 ---
 title: Generating a new SSH key and adding it to the ssh-agent 
-summary: You can access and write data in repositories on GitHub.com using SSH (Secure Shell Protocol). When you connect via SSH, you authenticate using a private key file on your local machine. 
+summary: You can access and write data in repositories on GitHub.com using SSH (Secure Shell Protocol). 
 author: Junxiao Guo
 date: 2023-01-27
 tags:
