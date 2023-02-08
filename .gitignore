@@ -12,4 +12,5 @@
 **/node_modules/
 **/nohup.out
 **/blog_list.json
-._.DS_Store
+.DS_Store
+.env

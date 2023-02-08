@@ -4,8 +4,9 @@ LABEL maintainer="cyborgoat.com"
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
+COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 COPY ./app /app
-COPY ./tech-blog /app/data/tech-blog
+COPY ./tech-blog /home/data/tech-blog
 COPY ./scripts /scripts
 WORKDIR /app
 
