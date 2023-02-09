@@ -1,8 +1,8 @@
 ---
 title: Install oh-my-zsh in Ubuntu 20.04 
-summary: oh-my-zsh is an open-source framework for managing ZSH configuration and is community-driven.I
+summary: oh-my-zsh is an open-source framework for managing ZSH configuration and is community-driven.
 author: Junxiao Guo
-date: 2023-01-27
+date: 2023-02-01
 tags:
   - linux
   - zsh
