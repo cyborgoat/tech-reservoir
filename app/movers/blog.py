@@ -24,6 +24,7 @@ token = os.environ.get("API_TOKEN")
 
 
 def blog_list() -> List[Dict]:
+    """Fetch blog list"""
     BASE_DIR = "/home/data/tech-blog"
     category_dirs = glob(f'{BASE_DIR}/*/', recursive=False)
     blog_list = []
