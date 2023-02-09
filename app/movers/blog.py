@@ -14,13 +14,13 @@ from glob import glob
 import frontmatter
 import logging
 from typing import Dict, List
-
+import requests
 
 logging.basicConfig(encoding='utf-8', level=logging.INFO)
 
-host = os.environ.get("API_HOST")
-port = os.environ.get("API_PORT")
-token = os.environ.get("API_TOKEN")
+API_HOST = os.environ.get("API_HOST")
+API_PORT = os.environ.get("API_PORT")
+API_TOKEN = os.environ.get("API_TOKEN")
 
 
 def blog_list() -> List[Dict]:
@@ -46,3 +46,22 @@ def blog_list() -> List[Dict]:
 
     logging.info("Content fetched.")
     return blog_list
+
+
+def post_blogs():
+    """Post blogs to database"""
+    url = f"{API_HOST}:{API_PORT}/api/blog/blogs/"
+    headers = {"Content-Type": "application/json; charset=utf-8",
+               "Authorization": f"Token {API_TOKEN}"}
+
+    data = blog_list()
+    for blog in data:
+        blog['date'] = blog['date'].strftime('%Y-%m-%d')
+        blog['created_on'] = blog['date']
+        tags = blog['tags']
+        tags_dict = [{"name": tag} for tag in tags]
+        blog['tags'] = tags_dict
+        response = requests.post(url, headers=headers,
+                                 json=blog,
+                                 timeout=300)
+        print("Status Code", response.status_code)
