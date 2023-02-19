@@ -95,7 +95,7 @@ pyplot.show()
 
     P=1.000 Q=1.000
 
-![png](output_9_1.png)
+![png](https://dsm01pap004files.storage.live.com/y4mKWO3ExagJgVU1n8joYNknuL29GQsQv53mX79lZ7PiT2622JtM_3rJ95w4xo1OpTqe6KDH9aT98H1uTPDvUCvHNKdFHKaZtganRebMJtNxWDfqEO7v9uduplA6KzTYVVJRLd7jKWp2d9VKnT4hyvJnrRmR-i2IFc2wK_R6VlGOQRPvwbLiUeUMLC9slDAjpXV?width=547&height=413&cropmode=none)
 
 Running the example creates a histogram for each probability distribution, allowing the probabilities for each event to be directly compared.
 
