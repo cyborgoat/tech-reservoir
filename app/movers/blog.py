@@ -20,17 +20,12 @@ import datetime
 
 logging.basicConfig(encoding='utf-8', level=logging.INFO)
 
-API_HOST = os.environ.get("API_HOST")
-API_PORT = os.environ.get("API_PORT")
-API_TOKEN = os.environ.get("API_TOKEN")
-BLOG_BASE_DIR = "/home/data/tech-blog"
 
-
-def blog_list() -> List[Dict]:
+def blog_list(config: Dict) -> List[Dict]:
     """Fetch blog list"""
     data = []
 
-    category_dirs = glob(f'{BLOG_BASE_DIR}/*/', recursive=False)
+    category_dirs = glob(f'{config["BLOG_DIR"]}/*/', recursive=False)
     required_fields = set(["title", "author", "summary", "date", "tags"])
 
     for cat_dir in category_dirs:
@@ -50,15 +45,14 @@ def blog_list() -> List[Dict]:
     return data
 
 
-def post_blogs():
+def post_blogs(config: Dict):
     """Post blogs to database"""
-    url = f"{API_HOST}:{API_PORT}/api/blog/blogs/"
+    url = f"{config['API_HOST']}/api/blog/blogs/"
     headers = {"Content-Type": "application/json; charset=utf-8",
-               "Authorization": f"Token {API_TOKEN}"}
-
-    data = blog_list()
+               "Authorization": f"Token {config['API_TOKEN']}"}
+    data = blog_list(config)
     for blog in data:
-        blog['created_on'] = blog.pop(
+        blog['date'] = blog.pop(
             'date', datetime.date.today()).strftime('%Y-%m-%d')
         blog['tags'] = [{"name": tag} for tag in blog.get('tags', [])]
 
