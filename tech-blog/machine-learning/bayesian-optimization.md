@@ -8,8 +8,6 @@ tags:
   - automl
 ---
 
-# Implement Bayesian Optimization from Scratch in Python
-
 Hyperparameter optimization is a challenging problem of finding an input that results in the minimum or maximum cost of a given objective function.
 
 Bayesian Optimization provides a principled technique based on Bayes Theorem to direct a search of a global optimization problem that is efficient and effective. It works by building a probabilistic model of the objective function, called the surrogate function, that is then searched efficiently with an acquisition function before candidate samples are chosen for evaluation on the real objective function.
