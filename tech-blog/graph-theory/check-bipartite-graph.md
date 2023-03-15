@@ -9,7 +9,7 @@ tags:
 
 A Bipartite Graph is a graph whose vertices can be divided into two independent sets, $U$ and $V$ such that every edge $(u, v)$ either connects a vertex from $U$ to $V$ or from $V$ to $U$. In other words, for every edge $(u, v)$, either $u$ belongs to $U$ and $v$ to $V$, or $u$ belongs to $V$ and $v$ to $U$,also, there is no edge that connects vertices of same set.
 
-![bipartite-graph](./images/BipartiteGraph_1000.svg "Bipartite Graph")
+![bipartite-graph](https://dsm01pap004files.storage.live.com/y4mtC_mu7NmRP7dJnv4hYJ0oAA9ruGnRIZiH4r5CHxEkYLUJNwUqbg8gLNTlcVDN2dkd8dnFBDNa2DpUYaGzr4pCPPBkP_MLwnvpROhyeTvIS1Wv5s3vAWPKdwoz-jHY8vDUBSdyMSsGX-xxoWjyUWXi1UnR85TTZpp-sU1LnE13B8OTBDvRUvbt5u9B3ggeYUR?width=320&height=158&cropmode=none)
 
 The algorithm to check for the bipartiteness of a graph is like creating a fascinating canvas of colors. 
 1. We have an array called color\[\] which stores 0 or 1 for every node. 
