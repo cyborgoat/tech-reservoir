@@ -14,5 +14,5 @@
 **/blog_list.json
 .DS_Store
 .env
-env.bak/
 .ipynb_checkpoints/
+*.bak/
