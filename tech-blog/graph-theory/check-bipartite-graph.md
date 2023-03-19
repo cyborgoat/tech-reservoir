@@ -1,5 +1,5 @@
 ---
-title: Check wether a graph is bipartite
+title: Check whether a graph is bipartite
 summary: This article describes what is bipartite graph and tells you how to determine if a graph is bipartite.
 author: Junxiao Guo
 date: 2023-03-15
