@@ -16,3 +16,4 @@
 .env
 .ipynb_checkpoints/
 *.bak/
+**/data/
