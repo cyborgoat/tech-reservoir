@@ -2,7 +2,7 @@
 title: Metrics to evaluate Question Answering models
 summary: This section introduces different kinds of metrics to evaluate question answering models.
 author: Junxiao Guo
-date: 2021-03-26
+date: 2023-03-26
 tags:
   - nlp
   - question-answering

@@ -2,7 +2,7 @@
 title: Build a simple Question Answering model for SQuAD dataset
 summary: This article introduces SQuAD dataset and how to use this dataset to perform a simple question answering system with BERT.
 author: Junxiao Guo
-date: 2021-03-26
+date: 2023-03-26
 tags:
   - nlp
   - deep-learning
