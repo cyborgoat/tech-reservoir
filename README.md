@@ -1,1 +1,1 @@
-# algorithm-blogs
+# tech-reservoir
