@@ -4,7 +4,7 @@ summary: An introduction to BERT algorithm and a simple example to use this mode
 author: Junxiao Guo
 date: 2021-03-05
 tags:
-  - pre-trained model
+  - "pre-trained model"
   - nlp
 ---
 

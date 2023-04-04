@@ -5,7 +5,7 @@ author: Junxiao Guo
 date: 2022-08-05
 tags:
   - deep-learning
-  - nlp
+  - NLP
 ---
 
 In recent years, natural language processing has become a hot topic in the field of artificial intelligence. Model structures such as LSTM, Attention, and Transformer have become popular. Based on these theories, various powerful pre-training models have been derived, such as BERT, GPT3, etc.
