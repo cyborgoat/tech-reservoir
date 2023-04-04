@@ -11,7 +11,7 @@
 from glob import glob
 from pathlib import Path
 from typing import Dict, List
-
+from tqdm import tqdm
 import os
 import logging
 import requests
@@ -40,7 +40,8 @@ def blog_list(config: Dict) -> List[Dict]:
 
             info = {}
             info.update(front_matter.metadata)
-            info.update(content=filepath.read_text(encoding='utf-8'))
+            info.update(content=filepath.read_text(encoding='utf-8').replace(
+                "../../assets", "https://github.com/cyborgoat/tech-reservoir/blob/main/assets").replace(".png)", ".png?raw=true)"))
             data.append(info)
     return data
 
@@ -51,11 +52,12 @@ def post_blogs(config: Dict):
     headers = {"Content-Type": "application/json; charset=utf-8",
                "Authorization": f"Token {config['API_TOKEN']}"}
     data = blog_list(config)
-    for blog in data:
+    pbar = tqdm(data)
+    for blog in pbar:
+        pbar.set_description("Processing %s" % blog.get('title'))
         blog['date'] = blog.pop(
             'date', datetime.date.today()).strftime('%Y-%m-%d')
         blog['tags'] = [{"name": tag} for tag in blog.get('tags', [])]
-
         response = requests.post(url, headers=headers,
                                  json=blog,
                                  timeout=300)
