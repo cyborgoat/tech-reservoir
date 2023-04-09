@@ -5,7 +5,9 @@ author: Junxiao Guo
 date: 2023-04-09
 tags:
   - deep-learning
-  - computer-vision
+  - transformer
+  - attention
+  - llm
 ---
 
 In this article we will explain different types of attention mechanism:
