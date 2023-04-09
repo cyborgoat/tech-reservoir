@@ -1,4 +1,12 @@
-# Attention Mechanisms Explained
+---
+title: Attention Mechanism Explained
+summary: In this article we will explain different types of attention mechanism 
+author: Junxiao Guo
+date: 2023-04-09
+tags:
+  - deep-learning
+  - computer-vision
+---
 
 In this article we will explain different types of attention mechanism:
 
