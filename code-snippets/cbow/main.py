@@ -32,8 +32,8 @@ def collate_fn(batch):
 class CBOW(nn.Module):
     def __init__(self, vocab_size, embedding_dim):
         super(CBOW, self).__init__()
-        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=0)
-        self.linear = nn.Linear(embedding_dim, vocab_size)
+        self.embedding = nn.Embedding(vocab_size + 1, embedding_dim, padding_idx=0)
+        self.linear = nn.Linear(embedding_dim, vocab_size + 1)
         self.softmax = nn.Softmax(dim=1)
 
     def forward(self, inputs):
@@ -46,18 +46,19 @@ class CBOW(nn.Module):
 
 # Example training data
 training_data = [
-    ("I love deep learning", "deep"),
-    ("I enjoy NLP", "NLP"),
-    ("I like PyTorch", "PyTorch"),
-    ("I prefer Python", "Python")
+    ("I love deep learning", "studying"),
+    ("I enjoy NLP lecture", "those"),
+    ("I like PyTorch library", "using"),
+    ("I prefer Python courses", "taking")
 ]
 
 # Prepare vocabulary
 vocab = set()
 for context, target in training_data:
     vocab.update(context.split())
+    vocab.update(target.split())
 vocab_size = len(vocab)
-word_to_ix = {word: i for i, word in enumerate(vocab)}
+word_to_ix = {word: i + 1 for i, word in enumerate(vocab)}
 
 # Hyperparameters
 embedding_dim = 16
