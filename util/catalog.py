@@ -12,7 +12,7 @@ ASSETS_DIR = pathlib.Path(__file__).parents[1].joinpath("assets")
 
 def write_to_json():
     """Fetch blog list"""
-    data = []
+    catalog = []
 
     category_dirs = glob(str(BLOG_DIR) + '/*/', recursive=False)
     required_fields = {"title", "author", "summary", "date", "tags"}
@@ -29,16 +29,25 @@ def write_to_json():
 
             info = {}
             info.update(front_matter.metadata)
+            category = cat_dir.split('/')[-2]
+            file_name = raw_fp.replace('.md', '.json')
+            ASSETS_DIR.joinpath(category).mkdir(parents=True, exist_ok=True)
+
+            catalog_item = {'category': category, 'fname': file_name}
+            catalog_item.update(front_matter.metadata)
+            catalog.append(catalog_item)
+
+            # Update content
             info.update(content=filepath.read_text(encoding='utf-8').replace("../../assets",
                                                                              "https://github.com/cyborgoat/tech-reservoir/blob/main/assets").replace(
                 ".png)",
                 ".png?raw=true)"))
 
-            category = cat_dir.split('/')[-2]
-            file_name = raw_fp.replace('.md', '.json')
-            ASSETS_DIR.joinpath(category).mkdir(parents=True, exist_ok=True)
             with open(ASSETS_DIR.joinpath(category, file_name), 'w', encoding='utf-8') as f:
                 json.dump(info, f, default=str)
+
+        with open(ASSETS_DIR.joinpath("catalog.json"), 'w', encoding='utf-8') as f:
+            json.dump(catalog, f, default=str)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,255 @@
+[
+  {
+    "category": "database",
+    "fname": "postgresql.json",
+    "title": "Postgres Database Installation",
+    "summary": "A brief summary of commands to install postgres database",
+    "author": "Junxiao Guo",
+    "date": "2021-01-01",
+    "tags": [
+      "database",
+      "postgres"
+    ]
+  },
+  {
+    "category": "deep-learning",
+    "fname": "ANN.json",
+    "title": "MNIST Handwritten Digit Recognition",
+    "summary": "Hands on small project to build a neural net to recognize hand written digits from MNIST dataset with PyTorch.",
+    "author": "Junxiao Guo",
+    "date": "2021-05-05",
+    "tags": [
+      "deep-learning",
+      "computer-vision"
+    ]
+  },
+  {
+    "category": "deep-learning",
+    "fname": "RNN.json",
+    "title": "Understanding RNN architecture",
+    "summary": "An introduction to recurrent neural network (RNN) by using several examples.",
+    "author": "Junxiao Guo",
+    "date": "2022-08-05",
+    "tags": [
+      "deep-learning",
+      "NLP"
+    ]
+  },
+  {
+    "category": "deep-learning",
+    "fname": "BERT.json",
+    "title": "Pre-trained Model --- BERT",
+    "summary": "An introduction to BERT algorithm and a simple example to use this model",
+    "author": "Junxiao Guo",
+    "date": "2021-03-05",
+    "tags": [
+      "pre-trained model",
+      "nlp"
+    ]
+  },
+  {
+    "category": "deep-learning",
+    "fname": "attention.json",
+    "title": "Attention Mechanism Explained",
+    "summary": "In this article we will explain different types of attention mechanism",
+    "author": "Junxiao Guo",
+    "date": "2023-04-09",
+    "tags": [
+      "deep-learning",
+      "transformer",
+      "attention",
+      "llm"
+    ]
+  },
+  {
+    "category": "deep-learning",
+    "fname": "ALBERT.json",
+    "title": "ALBERT",
+    "summary": "An introduction to ALBERT algorithm and a simple example to use this model",
+    "author": "Junxiao Guo",
+    "date": "2022-08-05",
+    "tags": [
+      "pre-trained-model",
+      "nlp"
+    ]
+  },
+  {
+    "category": "deep-learning",
+    "fname": "qa_metrics.json",
+    "title": "Metrics to evaluate Question Answering models",
+    "summary": "This section introduces different kinds of metrics to evaluate question answering models.",
+    "author": "Junxiao Guo",
+    "date": "2023-03-26",
+    "tags": [
+      "nlp",
+      "question-answering"
+    ]
+  },
+  {
+    "category": "deep-learning",
+    "fname": "build_qa_model.json",
+    "title": "Build a simple Question Answering model for SQuAD dataset",
+    "summary": "This article introduces SQuAD dataset and how to use this dataset to perform a simple question answering system with BERT.",
+    "author": "Junxiao Guo",
+    "date": "2023-03-26",
+    "tags": [
+      "nlp",
+      "deep-learning",
+      "question-answering"
+    ]
+  },
+  {
+    "category": "docker",
+    "fname": "pip-mirror.json",
+    "title": "Add pip mirror settings for dockerfile",
+    "summary": "This article teaches how to add pip mirrors inside docker file",
+    "author": "Junxiao Guo",
+    "date": "2023-01-30",
+    "tags": [
+      "docker"
+    ]
+  },
+  {
+    "category": "rust",
+    "fname": "installation.json",
+    "title": "Rust Installation Tutorial",
+    "summary": "This article goes through how to install cargo on you local machine and tutorial on proxy settings if you are located in China.",
+    "author": "Junxiao Guo",
+    "date": "2023-01-19",
+    "tags": [
+      "rust"
+    ]
+  },
+  {
+    "category": "language-modeling",
+    "fname": "LLaMA.json",
+    "title": "LLaMA: Meta's 65-billion-parameter large language model",
+    "summary": "A collection of language models ranging from 7B to 65B parameters trained from trillions of tokens.",
+    "author": "Junxiao Guo",
+    "date": "2023-04-04",
+    "tags": [
+      "llm",
+      "nlp",
+      "gpt",
+      "transformer"
+    ]
+  },
+  {
+    "category": "environment-setting",
+    "fname": "conda.json",
+    "title": "Installing minconda on Linux machine",
+    "summary": "Introductions on how to use command line to install miniconda",
+    "author": "Junxiao Guo",
+    "date": "2021-01-01",
+    "tags": [
+      "python",
+      "conda"
+    ]
+  },
+  {
+    "category": "webdev",
+    "fname": "nodejs-installation.json",
+    "title": "Node.js Installation For Ubuntu 20.04",
+    "summary": "This article goes through how to install Node.js on you local machine and tutorial on mirror settings if you are located in China.",
+    "author": "Junxiao Guo",
+    "date": "2023-01-19",
+    "tags": [
+      "node.js",
+      "frontend"
+    ]
+  },
+  {
+    "category": "graph-theory",
+    "fname": "check-bipartite-graph.json",
+    "title": "Check whether a graph is bipartite",
+    "summary": "This article describes what is bipartite graph and tells you how to determine if a graph is bipartite.",
+    "author": "Junxiao Guo",
+    "date": "2023-03-15",
+    "tags": [
+      "graph-theory"
+    ]
+  },
+  {
+    "category": "zsh",
+    "fname": "omz.json",
+    "title": "Install oh-my-zsh in Ubuntu 20.04",
+    "summary": "oh-my-zsh is an open-source framework for managing ZSH configuration and is community-driven.",
+    "author": "Junxiao Guo",
+    "date": "2023-02-01",
+    "tags": [
+      "linux",
+      "zsh"
+    ]
+  },
+  {
+    "category": "machine-learning",
+    "fname": "apriori.json",
+    "title": "Apriori & FP-growth Algorithm",
+    "summary": "A brief summary of commands to install postgres database",
+    "author": "Junxiao Guo",
+    "date": "2021-01-01",
+    "tags": [
+      "machine-learning",
+      "data-mining"
+    ]
+  },
+  {
+    "category": "machine-learning",
+    "fname": "kl-divergence.json",
+    "title": "KL Divergence",
+    "summary": "KL divergence or relative entropy is a measure of how one probability distribution is different from a reference probability distribution.",
+    "author": "Junxiao Guo",
+    "date": "2023-01-29",
+    "tags": [
+      "machine-learning",
+      "similarity"
+    ]
+  },
+  {
+    "category": "machine-learning",
+    "fname": "bayesian-optimization.json",
+    "title": "Beyesian Optimization with Python",
+    "summary": "Beyesian optimization explained in detail with python implementation.",
+    "author": "Junxiao Guo",
+    "date": "2023-02-27",
+    "tags": [
+      "machine-learning",
+      "automl"
+    ]
+  },
+  {
+    "category": "machine-learning",
+    "fname": "som.json",
+    "title": "Self-organizing Map Network",
+    "summary": "SOM (Self-Origanizing Maps), or SOFM (Self-Origanizing Feature Maps), is a clustering algorithm based on neural networks, which is an unsupervised learning algorithm.",
+    "author": "Junxiao Guo",
+    "date": "2022-05-10",
+    "tags": [
+      "machine-learning",
+      "clustering"
+    ]
+  },
+  {
+    "category": "machine-learning",
+    "fname": "page_rank.json",
+    "title": "PageRank Algorithm",
+    "summary": "PageRank is an algorithm used by Google to rank web pages in its search engine search results. The algorithm is named after Larry Page, one of the founders of Google.",
+    "author": "Junxiao Guo",
+    "date": "2022-10-01",
+    "tags": [
+      "machine-learning",
+      "ranking"
+    ]
+  },
+  {
+    "category": "git",
+    "fname": "new-ssh-key.json",
+    "title": "Generating a new SSH key and adding it to the ssh-agent",
+    "summary": "You can access and write data in repositories on GitHub.com using SSH (Secure Shell Protocol).",
+    "author": "Junxiao Guo",
+    "date": "2023-01-27",
+    "tags": [
+      "git"
+    ]
+  }
+]
