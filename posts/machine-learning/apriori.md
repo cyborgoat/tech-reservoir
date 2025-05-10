@@ -2,9 +2,13 @@
 title: "Apriori & FP-growth Algorithm"
 date: "2021-01-01"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["machine-learning", "data-mining"]
 excerpt: "A brief summary of commands to install postgres database"
 ---
+
+
+
 
 
 When you buy vegetables, have you ever made a list of items to buy? Everyone has different needs and preferences when making the list. As the store itself, it can be better according to the category of the item and the frequency of purchase To understand the customer's consumption habits. Assuming that many customers like their colleagues to buy X and Y two things, then:

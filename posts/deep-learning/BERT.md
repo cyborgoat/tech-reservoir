@@ -2,9 +2,13 @@
 title: "Pre-trained Model --- BERT"
 date: "2021-03-05"
 author: "Junxiao Guo"
-tags: [""pre-trained model"", "nlp"]
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
+tags: ["pre-trained model", "nlp"]
 excerpt: "An introduction to BERT algorithm and a simple example to use this model"
 ---
+
+
+
 
 
 ## Abstract

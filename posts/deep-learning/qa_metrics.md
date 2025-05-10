@@ -2,9 +2,13 @@
 title: "Metrics to evaluate Question Answering models"
 date: "2023-03-26"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["nlp", "question-answering"]
 excerpt: "This section introduces different kinds of metrics to evaluate question answering models."
 ---
+
+
+
 
 
 

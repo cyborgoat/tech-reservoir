@@ -2,9 +2,13 @@
 title: "LLaMA: Meta's 65-billion-parameter large language model"
 date: "2023-04-04"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["llm", "nlp", "gpt", "transformer"]
 excerpt: "A collection of language models ranging from 7B to 65B parameters trained from trillions of tokens."
 ---
+
+
+
 
 
 ## Overview

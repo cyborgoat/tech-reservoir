@@ -2,9 +2,13 @@
 title: "Attention Mechanism Explained"
 date: "2023-04-09"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["deep-learning", "transformer", "attention", "llm"]
 excerpt: "In this article we will explain different types of attention mechanism"
 ---
+
+
+
 
 
 In this article we will explain different types of attention mechanism:

@@ -2,9 +2,13 @@
 title: "Understanding RNN architecture"
 date: "2022-08-05"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["deep-learning", "NLP"]
 excerpt: "An introduction to recurrent neural network (RNN) by using several examples."
 ---
+
+
+
 
 
 In recent years, natural language processing has become a hot topic in the field of artificial intelligence. Model structures such as LSTM, Attention, and Transformer have become popular. Based on these theories, various powerful pre-training models have been derived, such as BERT, GPT3, etc.

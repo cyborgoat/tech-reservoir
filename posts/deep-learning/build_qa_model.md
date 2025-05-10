@@ -2,9 +2,13 @@
 title: "Build a simple Question Answering model for SQuAD dataset"
 date: "2023-03-26"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["nlp", "deep-learning", "question-answering"]
 excerpt: "This article introduces SQuAD dataset and how to use this dataset to perform a simple question answering system with BERT."
 ---
+
+
+
 
 
 ## SQuAD 2.0 Dataset

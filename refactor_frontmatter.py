@@ -33,8 +33,12 @@ def parse_front_matter(lines):
 
 
 def format_tags(raw):
-    tags = [t.strip() for t in raw.split(',') if t.strip()]
-    return '[' + ', '.join(f'"{t}"' for t in tags) + ']'
+    # Normalize raw tags, handle inline YAML list or comma-separated strings
+    clean = raw.strip()
+    if clean.startswith('[') and clean.endswith(']'):
+        clean = clean[1:-1]
+    parts = [t.strip().strip('"').strip("'") for t in clean.split(',') if t.strip()]
+    return '[' + ', '.join(f'"{t}"' for t in parts) + ']'
 
 
 def build_front_matter(meta):
@@ -60,6 +64,8 @@ def process_file(path):
     fm, content_start = parse_front_matter(lines)
     if 'summary' in fm:
         fm['excerpt'] = fm.pop('summary')
+    # Add default author image for all posts
+    fm['authorImage'] = 'https://avatars.githubusercontent.com/u/44262838?v=4&size=64'
     new_fm = build_front_matter(fm)
     content = lines[content_start:]
     with open(path, 'w', encoding='utf-8') as f:

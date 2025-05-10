@@ -2,9 +2,13 @@
 title: "PageRank Algorithm"
 date: "2022-10-01"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["machine-learning", "ranking"]
 excerpt: "PageRank is an algorithm used by Google to rank web pages in its search engine search results. The algorithm is named after Larry Page, one of the founders of Google."
 ---
+
+
+
 
 
 ## Introduction

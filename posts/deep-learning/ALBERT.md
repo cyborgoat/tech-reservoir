@@ -2,9 +2,13 @@
 title: "ALBERT"
 date: "2022-08-05"
 author: "Junxiao Guo"
-tags: [""pre-trained-model"", ""nlp""]
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
+tags: ["pre-trained-model", "nlp"]
 excerpt: "An introduction to ALBERT algorithm and a simple example to use this model"
 ---
+
+
+
 
 
 [\[论文链接\]](https://arxiv.org/pdf/1909.11942.pdf)
@@ -137,3 +141,5 @@ choices[result]
 ```
 
     '他们主要负责AI算法的研究和落地.'
+
+```

@@ -2,9 +2,13 @@
 title: "Beyesian Optimization with Python"
 date: "2023-02-27"
 author: "Junxiao Guo"
+authorImage: "https://avatars.githubusercontent.com/u/44262838?v=4&size=64"
 tags: ["machine-learning", "automl"]
 excerpt: "Beyesian optimization explained in detail with python implementation."
 ---
+
+
+
 
 
 Hyperparameter optimization is a challenging problem of finding an input that results in the minimum or maximum cost of a given objective function.
